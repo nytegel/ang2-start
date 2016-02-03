@@ -1,0 +1,44 @@
+<html>
+
+  <head>
+    <title>Angular 2 QuickStart</title>
+
+    <!-- Load Bootstrap -->
+    <script src='node_modules/jquery/dist/jquery.min.js'></script>
+    <script src='node_modules/bootstrap/dist/js/bootstrap.min.js'></script>
+    <link rel='stylesheet' href='node_modules/bootstrap/dist/css/bootstrap.min.css' />
+    <!-- Load Angular2 -->
+    <script src='node_modules/angular2/bundles/angular2-polyfills.js'></script>
+    <script src='node_modules/systemjs/dist/system.src.js'></script>
+    <script src='node_modules/rxjs/bundles/Rx.js'></script>
+    <script src='node_modules/angular2/bundles/angular2.dev.js'></script>
+    <script src='node_modules/angular2/bundles/router.dev.js'></script>
+    <script src='node_modules/angular2/bundles/http.dev.js'></script>
+    <script>
+        System.config({
+            packages: {
+                src: { 
+                    format: 'register', 
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        System.import('src/app/app')
+            .then(null, console.error.bind(console));
+    </script>
+
+  </head>
+
+  <!-- 3. Display the application -->
+  <body>
+
+    <div class="container">
+        <h1>My Files</h1>
+        <files-app>Loading...</files-app>
+        
+    </div>
+
+
+  </body>
+
+</html>

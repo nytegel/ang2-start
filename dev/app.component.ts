@@ -5,5 +5,5 @@ import {Component} from 'angular2/core';
     template: 'Hello World!',
 })
 export class AppComponent {
-
+    
 }

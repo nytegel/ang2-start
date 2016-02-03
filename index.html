@@ -17,13 +17,13 @@
     <script>
         System.config({
             packages: {
-                src: { 
+                app: { 
                     format: 'register', 
                     defaultExtension: 'js'
                 }
             }
         });
-        System.import('src/app/app')
+        System.import('app/boot')
             .then(null, console.error.bind(console));
     </script>
 
@@ -33,9 +33,7 @@
   <body>
 
     <div class="container">
-        <h1>My Files</h1>
-        <files-app>Loading...</files-app>
-        
+        <app>Loading...</app>   
     </div>
 
 

@@ -8,7 +8,7 @@ import {Component} from 'angular2/core';
     `
 })
 export class AppComponent {
-    public clientName = 'Nigel';
+    public clientName = 'Hello World';
     
     
 }

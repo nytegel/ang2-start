@@ -18,7 +18,7 @@ System.register(['angular2/core'], function(exports_1) {
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
-                    this.clientName = 'Nigel';
+                    this.clientName = 'Hello World';
                 }
                 AppComponent = __decorate([
                     core_1.Component({
